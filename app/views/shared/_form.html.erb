@@ -12,13 +12,13 @@
   </div>
   <% end %>
   
-  <div class="form-group form-control">
-    <p><%= f.input :title %>
-    <%= f.input :description %></p>
+  <div class="form-group">
+    <p><%= f.input :title, input_html: { class: "form-control" } %><br>
+    <%= f.input :description, input_html: { class: "form-control" } %></p>
   </div>
   
   <div class="btn btn-primary">
-    <p><%= f.button :submit %></p>
+    <p><%= f.button :submit, input_html: { class: "form-control" } %></p>
   </div>
   
 <% end %>  

@@ -12,7 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'simple_form', '~> 3.1.0'
-
+gem 'devise', '~> 3.5.1'
 
 group :development, :test do
   gem 'byebug'
