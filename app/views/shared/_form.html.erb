@@ -1,0 +1,24 @@
+<%= simple_form_for(@pin) do |f| %>
+  <% if @pin.errors.any? %>
+  <div id="errors">
+    <h2>
+      <%= pluralize(@pin.errors.count, "error") %> prevented this Pin from being saved!
+    </h2>
+    <ul>
+      <% @pin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+  
+  <div class="form-group form-control">
+    <p><%= f.input :title %>
+    <%= f.input :description %></p>
+  </div>
+  
+  <div class="btn btn-primary">
+    <p><%= f.button :submit %></p>
+  </div>
+  
+<% end %>  
