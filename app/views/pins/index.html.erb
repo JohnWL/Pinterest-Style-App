@@ -1,3 +1,4 @@
 <% @pins.each do |p| %>
+  <p><%= link_to (image_tag p.image.url(:medium)), p %></p>
   <h2><%= link_to p.title, p %></h2>
 <% end %>
