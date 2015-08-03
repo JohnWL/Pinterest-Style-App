@@ -21,6 +21,12 @@
           </div>
           <div class="col-md-6">
             <div class="btn-group pull-right">
+                <%= link_to like_pin_path(@pin), method: :put,
+                                                 class: "btn btn-default" do %>
+                  <span class="glyphicon glyphicon-heart">
+                    <%= @pin.get_upvotes.size %>
+                  </span>
+                <% end %>
                 <% if user_signed_in? %>
                 <%= link_to "Edit", edit_pin_path, class: "btn btn-default" %>
                 <%= link_to "Delete", pin_path, method: :delete,
