@@ -4,7 +4,7 @@
       <div class="panel-heading">
         <h1>Add Pin</h1>
         <div class="panel-body">
-          <%= render 'shared/form' %>
+          <%= render partial: 'shared/form', locals: @pin %>
           <%= link_to "Back Home", root_path %>
         </div>
       </div>
