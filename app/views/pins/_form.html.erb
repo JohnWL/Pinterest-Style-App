@@ -21,7 +21,7 @@
   </div>
 
     <p><%= f.button :submit, class: "btn btn-primary" %>
-       <% if current_page? edit_pin_path(@pin)  %>
+       <% if request.path.include?('edit')  %>
          <%= link_to "Cancel Edit", pin_path, class: "btn btn-primary" %>
        <% end %></p>
   
